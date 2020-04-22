@@ -1,7 +1,7 @@
 {
     "name": "whynot",
     "description": "A super simple, trimed down, text first theme",
-    "version": "v1.0.3",
+    "version": "v1.0.4",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
