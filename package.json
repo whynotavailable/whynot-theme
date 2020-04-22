@@ -1,0 +1,36 @@
+{
+    "name": "whynot",
+    "description": "A super simple, trimed down, text first theme",
+    "version": "v1.0.2",
+    "engines": {
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Thomas",
+        "email": "whynotavialable@protonmail.com",
+        "url": "https://www.whynotavailable.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TryGhost/Casper.git"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "config": {
+        "posts_per_page": 12
+    }
+}

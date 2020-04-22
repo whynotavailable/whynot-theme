@@ -1,0 +1,26 @@
+{{!< default}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article>
+
+            <header class="post-full-header">
+                <h2 class="post-full-title">{{title}}</h2>
+            </header>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    {{content}}
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+{{/post}}
