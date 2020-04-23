@@ -41,6 +41,12 @@ h1 > a {
   text-decoration: none;
 }
 
+.site-title img {
+    height: 2rem;
+    position: relative;
+    top: .3rem;
+}
+
 .kg-width-wide {}
 .kg-width-full {}
 .kg-gallery-container {}
@@ -253,3 +259,47 @@ h1 > a {
  .token.entity {
      cursor: help;
  }
+
+
+.form-submit {
+    display: none;
+}
+
+.ctrl {
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+    background-color: #222831;
+    color: #eeeeee;
+    border: none;
+    border-bottom: solid 2px #393e46;
+}
+
+.ctrl:focus,
+.ctrl.filled {
+    border-color: #00adb5;
+}
+
+.search .ctrl:focus ~ label,
+.search .ctrl.filled ~ label {
+    font-size: .75rem;
+    top: -1rem;
+}
+
+.search {
+    position: relative;
+}
+
+.ctrl {
+    transition: all .3s ease;
+}
+
+.search label {
+    transition: all .3s ease;
+}
+
+.search label {
+    position: absolute;
+    top: 0;
+    left: .25rem
+}
