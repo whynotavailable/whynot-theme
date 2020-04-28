@@ -279,60 +279,42 @@ h1 > a {
      cursor: help;
  }
 
+ /* search start */
+
 .btn {
-    height: 2rem;
-    margin-top: .5rem;
-    border-radius: .2rem;
+    height: 1.8rem;
     border: none;
     color: #eee;
     background-color: #00adb5;
-    
-}
-
-.btn-inverse {
-    height: 2rem;
-    margin-top: .5rem;
-    border-radius: .2rem;
-    border: solid 2px #00adb5;
-    color: #00adb5;
-    background-color: #eeeeee;
+    margin: 0;
 }
 
 .ctrl {
-    display: block;
-    width: 100%;
-    height: 1.5rem;
+    display: inline;
     background-color: #222831;
+    font-size: 1rem;
+    line-height: 1.6rem;
     color: #eeeeee;
-    border: none;
-    border-bottom: solid 2px #393e46;
+    border: solid .1rem #393e46;
+    position: relative;
+    top: 0.07rem;
 }
 
-.ctrl:focus,
-.ctrl.filled {
+.ctrl:focus {
     border-color: #00adb5;
-}
-
-.search .ctrl:focus ~ label,
-.search .ctrl.filled ~ label {
-    font-size: .75rem;
-    top: -1rem;
 }
 
 .search {
     position: relative;
+    float: right;
 }
 
 .ctrl {
     transition: all .3s ease;
 }
 
-.search label {
-    transition: all .3s ease;
+.site-footer::after {
+    clear: both;
 }
 
-.search label {
-    position: absolute;
-    top: 0;
-    left: .25rem
-}
+/* search end */

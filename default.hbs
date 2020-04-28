@@ -39,8 +39,12 @@
         {{!-- The footer at the very bottom of the screen --}}
         <footer class="site-footer outer">
             <hr>
+            <form class="search" method="GET" action="">
+                <input placeholder="Search here!" id="searchText" class="ctrl" type="text" value=""><button class="form-submit btn" type="submit">Search</button>
+            </form>
             {{@site.description}}
         </footer>
+
 
     </div>
 
@@ -48,7 +52,15 @@
     {{{block "scripts"}}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js" integrity="sha256-3teItwIfMuVB74Alnxw/y5HAZ2irOsCULFff3EgbtEs=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha256-3S2PESHNt0YNL65z57WuHPHIv12fibpBDXepyCGHftw=" crossorigin="anonymous"></script>
-
+    <script>
+        document.getElementsByClassName('search')[0].addEventListener('submit', (e) => {
+            e.preventDefault();
+            const searchText = e.target.querySelector('input').value;
+            const actualSearch = encodeURIComponent(searchText + " " + "site:www.whynotavailable.com");
+            const searchUri = `https://duckduckgo.com/?q=${actualSearch}&ia=web`
+            window.location = searchUri;
+        });
+    </script>
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
 
