@@ -1,0 +1,40 @@
+@import "variables";
+
+.btn {
+  border: none;
+  color: $color-text;
+  background-color: $color-primary;
+  margin: 0;
+  box-sizing: border-box;
+  height: 1.9rem;
+}
+
+.ctrl {
+  display: inline-block;
+  background-color: $color-bg;
+  color: $color-text;
+  border-left: solid .1rem $color-muted;
+  border-top: solid .1rem $color-muted;
+  border-bottom: solid .1rem $color-muted;
+  border-right: none;
+  padding-left: .36rem;
+  box-sizing: border-box;
+  height: 1.9rem;
+}
+
+.ctrl:focus {
+  border-color: $color-primary;
+}
+
+.search {
+  position: relative;
+  float: right;
+}
+
+.ctrl {
+  transition: all .3s ease;
+}
+
+.site-footer::after {
+  clear: both;
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+
+@import "variables";
+
+.site-wrapper {
+  margin: 1rem;
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+strong {
+  color: $color-primary;
+}
+
+.nav {
+  margin: .5rem;
+  padding: 0;
+  font-size:0.9rem
+}
+
+.nav > li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+a {
+  color: $color-text;
+}
+
+hr {
+  color: $color-muted;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-primary;
+  font-family: 'Lora', serif;
+}
+
+h1 > a {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+.site-title img {
+  height: 2rem;
+  position: relative;
+  top: .3rem;
+}
+
+.kg-width-wide {
+  margin: 2rem 0;
+}
+
+.kg-width-wide img {
+  max-width: 100%;
+}
+
+.kg-width-full {
+  margin: 2rem 0;
+}
+
+.kg-width-full img {
+  max-width: 100%;
+}
+
+
+.kg-gallery-container {}
+.kg-gallery-row {}
+.kg-gallery-image {}
+.kg-bookmark-card {
+  width: 100%;
+  position: relative;
+  margin: 1.25rem 0;
+}
+
+.kg-bookmark-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  color: currentColor;
+  font-family: inherit;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.kg-bookmark-container:hover {
+  text-decoration: none;
+}
+
+.kg-bookmark-content {
+  flex-basis: 0;
+  flex-grow: 999;
+  padding: 1rem;
+  order: 1;
+}
+
+.kg-bookmark-title {
+  font-weight: 600;
+}
+
+.kg-bookmark-metadata,
+.kg-bookmark-description {
+  margin-top: .5em;
+}
+
+.kg-bookmark-metadata {
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kg-bookmark-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.kg-bookmark-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: text-bottom;
+  margin-right: .5em;
+  margin-bottom: .12em;
+}
+
+.kg-bookmark-thumbnail {
+  display: flex;
+  flex-basis: 24rem;
+  flex-grow: 1;
+}
+
+.kg-bookmark-thumbnail img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  object-fit: cover;
+}
+
+.kg-bookmark-author {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.kg-bookmark-publisher::before {
+  content: "-";
+  margin: 0 .5em;
+}
+
+@import "code";
+
+@import "search";

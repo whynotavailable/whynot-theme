@@ -1,7 +1,7 @@
 {
     "name": "whynot",
     "description": "A super simple, trimed down, text first theme",
-    "version": "v1.0.4",
+    "version": "v1.1.0",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
@@ -32,5 +32,12 @@
     ],
     "config": {
         "posts_per_page": 12
+    },
+    "dependencies": {
+        "sass": "^1.26.5"
+    },
+    "scripts": {
+        "styles": "sass styles/main.scss assets/css/screen.css",
+        "styles-w": "sass --watch styles/main.scss assets/css/screen.css"
     }
 }
